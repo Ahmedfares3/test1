@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اختبار الوضع الداكن - AffiliateHub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .test-section {
+            margin: 20px 0;
+            padding: 30px;
+            background: var(--white);
+            border-radius: var(--radius-xl);
+            border: 1px solid var(--gray-200);
+            box-shadow: var(--shadow-md);
+        }
+        .color-palette {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .color-item {
+            text-align: center;
+            padding: 15px;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--gray-200);
+        }
+        .color-sample {
+            width: 60px;
+            height: 60px;
+            border-radius: var(--radius-lg);
+            margin: 0 auto 10px;
+            border: 2px solid var(--gray-300);
+        }
+        .component-showcase {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .showcase-item {
+            padding: 20px;
+            background: var(--gray-50);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--gray-200);
+        }
+    </style>
+</head>
+<body>
+    <div style="max-width: 1200px; margin: 0 auto; padding: 20px;">
+        <header style="text-align: center; margin-bottom: 40px;">
+            <h1 style="color: var(--primary-color); margin-bottom: 10px;">
+                <i class="fas fa-palette"></i>
+                اختبار الوضع الداكن المحسن
+            </h1>
+            <p style="color: var(--gray-600); font-size: 18px;">اختبار شامل لجميع عناصر التصميم في الوضعين الفاتح والداكن</p>
+            
+            <!-- أزرار التحكم -->
+            <div class="nav-actions" style="display: flex; gap: 15px; justify-content: center; margin: 30px 0; padding: 20px; background: var(--gray-100); border-radius: var(--radius-xl);">
+                <!-- سيتم إضافة الأزرار تلقائياً -->
+            </div>
+        </header>
+
+        <!-- اختبار الألوان -->
+        <div class="test-section">
+            <h2><i class="fas fa-swatchbook"></i> لوحة الألوان</h2>
+            <div class="color-palette">
+                <div class="color-item">
+                    <div class="color-sample" style="background: var(--primary-color);"></div>
+                    <h4>Primary</h4>
+                    <small>var(--primary-color)</small>
+                </div>
+                <div class="color-item">
+                    <div class="color-sample" style="background: var(--secondary-color);"></div>
+                    <h4>Secondary</h4>
+                    <small>var(--secondary-color)</small>
+                </div>
+                <div class="color-item">
+                    <div class="color-sample" style="background: var(--success-color);"></div>
+                    <h4>Success</h4>
+                    <small>var(--success-color)</small>
+                </div>
+                <div class="color-item">
+                    <div class="color-sample" style="background: var(--error-color);"></div>
+                    <h4>Error</h4>
+                    <small>var(--error-color)</small>
+                </div>
+                <div class="color-item">
+                    <div class="color-sample" style="background: var(--warning-color);"></div>
+                    <h4>Warning</h4>
+                    <small>var(--warning-color)</small>
+                </div>
+                <div class="color-item">
+                    <div class="color-sample" style="background: var(--info-color);"></div>
+                    <h4>Info</h4>
+                    <small>var(--info-color)</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- اختبار المكونات -->
+        <div class="test-section">
+            <h2><i class="fas fa-cubes"></i> المكونات</h2>
+            <div class="component-showcase">
+                <div class="showcase-item">
+                    <h3>الأزرار</h3>
+                    <div style="display: flex; flex-direction: column; gap: 10px;">
+                        <button class="btn btn-primary">زر أساسي</button>
+                        <button class="btn btn-secondary">زر ثانوي</button>
+                        <button class="btn" style="background: var(--success-color); color: var(--white);">زر نجاح</button>
+                        <button class="btn" style="background: var(--error-color); color: var(--white);">زر خطأ</button>
+                    </div>
+                </div>
+                
+                <div class="showcase-item">
+                    <h3>النماذج</h3>
+                    <form style="display: flex; flex-direction: column; gap: 15px;">
+                        <input type="text" class="form-control" placeholder="اسم المستخدم">
+                        <input type="email" class="form-control" placeholder="البريد الإلكتروني">
+                        <textarea class="form-control" placeholder="رسالة" rows="3"></textarea>
+                        <select class="form-control">
+                            <option>اختر خيار</option>
+                            <option>خيار 1</option>
+                            <option>خيار 2</option>
+                        </select>
+                    </form>
+                </div>
+                
+                <div class="showcase-item">
+                    <h3>البطاقات</h3>
+                    <div class="card" style="padding: 20px;">
+                        <h4 style="margin-bottom: 10px;">عنوان البطاقة</h4>
+                        <p style="color: var(--gray-600); margin-bottom: 15px;">هذا نص تجريبي لاختبار البطاقة في الوضعين الفاتح والداكن.</p>
+                        <button class="btn btn-primary">إجراء</button>
+                    </div>
+                </div>
+                
+                <div class="showcase-item">
+                    <h3>الإحصائيات</h3>
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px;">
+                        <div style="text-align: center; padding: 15px; background: var(--white); border-radius: var(--radius-lg); border: 1px solid var(--gray-200);">
+                            <div style="font-size: 24px; font-weight: 700; color: var(--primary-color);">1,234</div>
+                            <div style="font-size: 12px; color: var(--gray-600);">المبيعات</div>
+                        </div>
+                        <div style="text-align: center; padding: 15px; background: var(--white); border-radius: var(--radius-lg); border: 1px solid var(--gray-200);">
+                            <div style="font-size: 24px; font-weight: 700; color: var(--success-color);">$5,678</div>
+                            <div style="font-size: 12px; color: var(--gray-600);">الأرباح</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- اختبار الجداول -->
+        <div class="test-section">
+            <h2><i class="fas fa-table"></i> الجداول</h2>
+            <div style="overflow-x: auto;">
+                <table class="table" style="width: 100%; border-collapse: collapse;">
+                    <thead>
+                        <tr style="background: var(--gray-100);">
+                            <th style="padding: 15px; text-align: right; border-bottom: 1px solid var(--gray-300);">المنتج</th>
+                            <th style="padding: 15px; text-align: right; border-bottom: 1px solid var(--gray-300);">السعر</th>
+                            <th style="padding: 15px; text-align: right; border-bottom: 1px solid var(--gray-300);">الحالة</th>
+                            <th style="padding: 15px; text-align: right; border-bottom: 1px solid var(--gray-300);">الإجراءات</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="padding: 15px; border-bottom: 1px solid var(--gray-200);">لابتوب Dell</td>
+                            <td style="padding: 15px; border-bottom: 1px solid var(--gray-200);">$999</td>
+                            <td style="padding: 15px; border-bottom: 1px solid var(--gray-200);">
+                                <span style="background: var(--success-color); color: var(--white); padding: 4px 8px; border-radius: var(--radius-full); font-size: 12px;">متاح</span>
+                            </td>
+                            <td style="padding: 15px; border-bottom: 1px solid var(--gray-200);">
+                                <button style="background: none; border: none; color: var(--primary-color); cursor: pointer;">تعديل</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 15px; border-bottom: 1px solid var(--gray-200);">iPhone 15</td>
+                            <td style="padding: 15px; border-bottom: 1px solid var(--gray-200);">$1299</td>
+                            <td style="padding: 15px; border-bottom: 1px solid var(--gray-200);">
+                                <span style="background: var(--warning-color); color: var(--white); padding: 4px 8px; border-radius: var(--radius-full); font-size: 12px;">قليل</span>
+                            </td>
+                            <td style="padding: 15px; border-bottom: 1px solid var(--gray-200);">
+                                <button style="background: none; border: none; color: var(--primary-color); cursor: pointer;">تعديل</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- اختبار الإشعارات -->
+        <div class="test-section">
+            <h2><i class="fas fa-bell"></i> اختبار الإشعارات</h2>
+            <p style="color: var(--gray-600); margin-bottom: 20px;">اضغط على الأزرار لاختبار أنواع مختلفة من الإشعارات</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                <button onclick="testNotification('success')" style="background: var(--success-color); color: var(--white); border: none; padding: 10px 20px; border-radius: var(--radius-lg); cursor: pointer;">
+                    <i class="fas fa-check"></i> نجاح
+                </button>
+                <button onclick="testNotification('error')" style="background: var(--error-color); color: var(--white); border: none; padding: 10px 20px; border-radius: var(--radius-lg); cursor: pointer;">
+                    <i class="fas fa-times"></i> خطأ
+                </button>
+                <button onclick="testNotification('warning')" style="background: var(--warning-color); color: var(--white); border: none; padding: 10px 20px; border-radius: var(--radius-lg); cursor: pointer;">
+                    <i class="fas fa-exclamation"></i> تحذير
+                </button>
+                <button onclick="testNotification('info')" style="background: var(--info-color); color: var(--white); border: none; padding: 10px 20px; border-radius: var(--radius-lg); cursor: pointer;">
+                    <i class="fas fa-info"></i> معلومات
+                </button>
+            </div>
+        </div>
+
+        <!-- معلومات النظام -->
+        <div class="test-section">
+            <h2><i class="fas fa-info-circle"></i> معلومات النظام</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                <div style="text-align: center; padding: 20px; background: var(--gray-50); border-radius: var(--radius-lg);">
+                    <div style="font-size: 32px; color: var(--success-color); margin-bottom: 10px;">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h4>الوضع الداكن</h4>
+                    <p style="color: var(--gray-600); font-size: 14px;">محسن ومتوافق</p>
+                </div>
+                <div style="text-align: center; padding: 20px; background: var(--gray-50); border-radius: var(--radius-lg);">
+                    <div style="font-size: 32px; color: var(--success-color); margin-bottom: 10px;">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h4>متجاوب</h4>
+                    <p style="color: var(--gray-600); font-size: 14px;">يعمل على جميع الأجهزة</p>
+                </div>
+                <div style="text-align: center; padding: 20px; background: var(--gray-50); border-radius: var(--radius-lg);">
+                    <div style="font-size: 32px; color: var(--success-color); margin-bottom: 10px;">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h4>تصميم محسن</h4>
+                    <p style="color: var(--gray-600); font-size: 14px;">ألوان وتباين مثالي</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/language.js"></script>
+    
+    <script>
+        function testNotification(type) {
+            if (!window.themeSystem) {
+                alert('النظام لم يتم تحميله بعد، يرجى الانتظار...');
+                return;
+            }
+            
+            const notifications = {
+                success: ['تم بنجاح!', 'تم تنفيذ العملية بنجاح', 'success', 'check-circle'],
+                error: ['حدث خطأ!', 'فشل في تنفيذ العملية', 'error', 'times-circle'],
+                warning: ['تحذير!', 'يرجى الانتباه لهذا التحذير', 'warning', 'exclamation-triangle'],
+                info: ['معلومات', 'معلومات مهمة يجب معرفتها', 'info', 'info-circle']
+            };
+            
+            const [title, message, notifType, icon] = notifications[type];
+            window.themeSystem.addNotification(title, message, notifType, icon);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عرض المميزات - AffiliateHub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            padding: 20px;
+            background: var(--gray-50);
+        }
+        .demo-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: var(--shadow-lg);
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .feature-card {
+            border: 1px solid var(--gray-200);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        .feature-card:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            color: white;
+            font-size: 24px;
+        }
+        .test-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .test-btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            color: white;
+        }
+        .test-btn.success { background: #10b981; }
+        .test-btn.error { background: #ef4444; }
+        .test-btn.warning { background: #f59e0b; }
+        .test-btn.info { background: #3b82f6; }
+        .test-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .nav-actions {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: var(--gray-100);
+            border-radius: 10px;
+        }
+        .status-indicator {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-left: 10px;
+        }
+        .status-indicator.active { background: #10b981; }
+        .status-indicator.inactive { background: #ef4444; }
+    </style>
+</head>
+<body>
+    <div class="demo-container">
+        <h1 style="text-align: center; margin-bottom: 20px; color: var(--primary-color);">
+            <i class="fas fa-rocket"></i>
+            عرض مميزات AffiliateHub
+        </h1>
+        
+        <div class="nav-actions">
+            <!-- سيتم إضافة الأزرار هنا تلقائياً -->
+            <p style="margin: 0; color: var(--gray-600);">الأزرار ستظهر هنا بعد تحميل النظام...</p>
+        </div>
+        
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <h3>الوضع الداكن والفاتح</h3>
+                <p>تبديل سهل بين الوضع الداكن والفاتح مع حفظ الإعدادات</p>
+                <span class="status-indicator active"></span>
+                <span style="color: #10b981; font-weight: 600;">متاح</span>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-bell"></i>
+                </div>
+                <h3>نظام الإشعارات</h3>
+                <p>إشعارات فورية مع أصوات مخصصة لكل نوع من الإشعارات</p>
+                <span class="status-indicator active"></span>
+                <span style="color: #10b981; font-weight: 600;">متاح</span>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-link"></i>
+                </div>
+                <h3>ربط المواقع الخارجية</h3>
+                <p>ربط Shopify، WooCommerce، والمتاجر المخصصة</p>
+                <span class="status-indicator active"></span>
+                <span style="color: #10b981; font-weight: 600;">متاح</span>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-volume-up"></i>
+                </div>
+                <h3>الأصوات المخصصة</h3>
+                <p>أصوات مختلفة لكل نوع إشعار مع إمكانية التحكم</p>
+                <span class="status-indicator active"></span>
+                <span style="color: #10b981; font-weight: 600;">متاح</span>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h3>دعم متعدد اللغات</h3>
+                <p>دعم كامل للغتين العربية والإنجليزية</p>
+                <span class="status-indicator active"></span>
+                <span style="color: #10b981; font-weight: 600;">متاح</span>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>تصميم متجاوب</h3>
+                <p>يعمل بشكل مثالي على جميع الأجهزة والشاشات</p>
+                <span class="status-indicator active"></span>
+                <span style="color: #10b981; font-weight: 600;">متاح</span>
+            </div>
+        </div>
+        
+        <div style="margin-top: 40px; text-align: center;">
+            <h2>اختبار الإشعارات</h2>
+            <p style="color: var(--gray-600); margin-bottom: 20px;">اضغط على الأزرار لاختبار أنواع مختلفة من الإشعارات</p>
+            
+            <div class="test-buttons">
+                <button class="test-btn success" onclick="testNotification('success')">
+                    <i class="fas fa-check-circle"></i> نجاح
+                </button>
+                <button class="test-btn error" onclick="testNotification('error')">
+                    <i class="fas fa-times-circle"></i> خطأ
+                </button>
+                <button class="test-btn warning" onclick="testNotification('warning')">
+                    <i class="fas fa-exclamation-triangle"></i> تحذير
+                </button>
+                <button class="test-btn info" onclick="testNotification('info')">
+                    <i class="fas fa-info-circle"></i> معلومات
+                </button>
+                <button class="test-btn success" onclick="testNotification('order')">
+                    <i class="fas fa-shopping-cart"></i> طلب جديد
+                </button>
+                <button class="test-btn success" onclick="testNotification('commission')">
+                    <i class="fas fa-dollar-sign"></i> عمولة
+                </button>
+            </div>
+        </div>
+        
+        <div style="margin-top: 40px; padding: 20px; background: var(--gray-100); border-radius: 10px;">
+            <h3 style="color: var(--primary-color);">
+                <i class="fas fa-info-circle"></i>
+                معلومات النظام
+            </h3>
+            <ul style="margin: 15px 0; padding-right: 20px; line-height: 1.8;">
+                <li>✅ <strong>الوضع الداكن:</strong> تبديل تلقائي مع حفظ الإعدادات</li>
+                <li>✅ <strong>الإشعارات:</strong> نظام متقدم مع أصوات مخصصة</li>
+                <li>✅ <strong>المواقع الخارجية:</strong> ربط Shopify, WooCommerce, والمتاجر المخصصة</li>
+                <li>✅ <strong>الأصوات:</strong> أصوات مختلفة لكل نوع إشعار</li>
+                <li>✅ <strong>التخزين المحلي:</strong> حفظ الإعدادات والإشعارات</li>
+                <li>✅ <strong>الإشعارات التلقائية:</strong> محاكاة إشعارات من المواقع المربوطة</li>
+                <li>✅ <strong>واجهة سهلة:</strong> تصميم بديهي وسهل الاستخدام</li>
+            </ul>
+        </div>
+        
+        <div style="text-align: center; margin-top: 30px; padding: 20px; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-radius: 10px; color: white;">
+            <h3 style="margin-bottom: 10px;">
+                <i class="fas fa-star"></i>
+                النظام جاهز للاستخدام!
+            </h3>
+            <p style="margin: 0; opacity: 0.9;">جميع المميزات تعمل بشكل كامل ومتاحة للاستخدام الآن</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/language.js"></script>
+    
+    <script>
+        function testNotification(type) {
+            if (!window.themeSystem) {
+                alert('النظام لم يتم تحميله بعد، يرجى الانتظار...');
+                return;
+            }
+            
+            const notifications = {
+                success: ['تم بنجاح!', 'تم تنفيذ العملية بنجاح', 'success', 'check-circle'],
+                error: ['حدث خطأ!', 'فشل في تنفيذ العملية', 'error', 'times-circle'],
+                warning: ['تحذير!', 'يرجى الانتباه لهذا التحذير', 'warning', 'exclamation-triangle'],
+                info: ['معلومات', 'معلومات مهمة يجب معرفتها', 'info', 'info-circle'],
+                order: ['طلب جديد!', 'تم إنشاء طلب جديد بقيمة $125.50', 'success', 'shopping-cart'],
+                commission: ['عمولة جديدة!', 'تم كسب عمولة $25.10', 'success', 'dollar-sign']
+            };
+            
+            const [title, message, notifType, icon] = notifications[type];
+            window.themeSystem.addNotification(title, message, notifType, icon);
+        }
+        
+        // Update status when system loads
+        setTimeout(() => {
+            if (window.themeSystem) {
+                const statusText = document.querySelector('.nav-actions p');
+                if (statusText) {
+                    statusText.innerHTML = '<i class="fas fa-check-circle" style="color: var(--success-color); margin-left: 8px;"></i> النظام محمل وجاهز للاستخدام!';
+                    statusText.style.color = 'var(--success-color)';
+                    statusText.style.fontWeight = '600';
+                }
+                
+                // Add a demo notification
+                setTimeout(() => {
+                    window.themeSystem.addNotification(
+                        'مرحباً بك في صفحة العرض!', 
+                        'يمكنك الآن اختبار جميع المميزات المتاحة', 
+                        'success', 
+                        'rocket'
+                    );
+                }, 1000);
+            }
+        }, 2000);
+        
+        // Add periodic demo notifications
+        setInterval(() => {
+            if (window.themeSystem && Math.random() > 0.8) {
+                const demoNotifications = [
+                    ['إشعار تجريبي', 'هذا إشعار تجريبي لعرض النظام', 'info', 'info-circle'],
+                    ['طلب وهمي', 'تم إنشاء طلب تجريبي بقيمة $99.99', 'success', 'shopping-cart'],
+                    ['تحديث تجريبي', 'تم تحديث حالة طلب تجريبي', 'warning', 'sync-alt']
+                ];
+                const [title, message, type, icon] = demoNotifications[Math.floor(Math.random() * demoNotifications.length)];
+                window.themeSystem.addNotification(title, message, type, icon);
+            }
+        }, 15000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة التسويق بالعمولة - AffiliateHub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2><i class="fas fa-chart-line"></i> AffiliateHub</h2>
+                </div>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <a href="#home" class="nav-link" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+                    <a href="#features" class="nav-link" data-ar="المميزات" data-en="Features">المميزات</a>
+                    <a href="#leaderboard" class="nav-link" data-ar="أفضل المسوقين" data-en="Top Marketers">أفضل المسوقين</a>
+                    <a href="#notifications" class="nav-link" data-ar="الإشعارات" data-en="Notifications">الإشعارات</a>
+                    <a href="#tutorials" class="nav-link" data-ar="الشروحات" data-en="Tutorials">الشروحات</a>
+                    <a href="#contact" class="nav-link" data-ar="اتصل بنا" data-en="Contact">اتصل بنا</a>
+                </div>
+
+                <div class="nav-actions">
+                    <div class="language-switcher">
+                        <button id="lang-toggle" class="lang-btn">
+                            <i class="fas fa-globe"></i>
+                            <span id="current-lang">العربية</span>
+                        </button>
+                    </div>
+                    <button class="login-btn" onclick="openLoginModal()" data-ar="تسجيل الدخول" data-en="Login">تسجيل الدخول</button>
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-ar="ابدأ رحلتك في التسويق بالعمولة" data-en="Start Your Affiliate Marketing Journey">
+                    ابدأ رحلتك في التسويق بالعمولة
+                </h1>
+                <p class="hero-subtitle" data-ar="انضم إلى آلاف المسوقين الناجحين واربح عمولات مجزية من خلال منصتنا المتطورة" data-en="Join thousands of successful marketers and earn rewarding commissions through our advanced platform">
+                    انضم إلى آلاف المسوقين الناجحين واربح عمولات مجزية من خلال منصتنا المتطورة
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="openRegisterModal()" data-ar="ابدأ الآن مجاناً" data-en="Start Now Free">ابدأ الآن مجاناً</button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('tutorials')" data-ar="شاهد الشروحات" data-en="Watch Tutorials">شاهد الشروحات</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <h3>10,000+</h3>
+                        <p data-ar="مسوق نشط" data-en="Active Marketers">مسوق نشط</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>$2M+</h3>
+                        <p data-ar="إجمالي العمولات" data-en="Total Commissions">إجمالي العمولات</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>500+</h3>
+                        <p data-ar="منتج متاح" data-en="Available Products">منتج متاح</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-ar="لماذا تختار منصتنا؟" data-en="Why Choose Our Platform?">لماذا تختار منصتنا؟</h2>
+                <p data-ar="نوفر لك جميع الأدوات والموارد التي تحتاجها للنجاح في التسويق بالعمولة" data-en="We provide you with all the tools and resources you need to succeed in affiliate marketing">
+                    نوفر لك جميع الأدوات والموارد التي تحتاجها للنجاح في التسويق بالعمولة
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 data-ar="تتبع متقدم" data-en="Advanced Tracking">تتبع متقدم</h3>
+                    <p data-ar="تتبع دقيق لجميع النقرات والتحويلات والعمولات في الوقت الفعلي" data-en="Accurate tracking of all clicks, conversions and commissions in real time">
+                        تتبع دقيق لجميع النقرات والتحويلات والعمولات في الوقت الفعلي
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3 data-ar="عمولات عالية" data-en="High Commissions">عمولات عالية</h3>
+                    <p data-ar="احصل على عمولات تنافسية تصل إلى 50% من قيمة المبيعات" data-en="Get competitive commissions up to 50% of sales value">
+                        احصل على عمولات تنافسية تصل إلى 50% من قيمة المبيعات
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 data-ar="أدوات تسويقية" data-en="Marketing Tools">أدوات تسويقية</h3>
+                    <p data-ar="مجموعة شاملة من الأدوات والمواد التسويقية الجاهزة للاستخدام" data-en="Comprehensive set of ready-to-use marketing tools and materials">
+                        مجموعة شاملة من الأدوات والمواد التسويقية الجاهزة للاستخدام
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 data-ar="دعم 24/7" data-en="24/7 Support">دعم 24/7</h3>
+                    <p data-ar="فريق دعم متخصص متاح على مدار الساعة لمساعدتك" data-en="Specialized support team available 24/7 to help you">
+                        فريق دعم متخصص متاح على مدار الساعة لمساعدتك
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 data-ar="تطبيق موبايل" data-en="Mobile App">تطبيق موبايل</h3>
+                    <p data-ar="تطبيق محمول سهل الاستخدام لإدارة حسابك من أي مكان" data-en="Easy-to-use mobile app to manage your account from anywhere">
+                        تطبيق محمول سهل الاستخدام لإدارة حسابك من أي مكان
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 data-ar="تدريب مجاني" data-en="Free Training">تدريب مجاني</h3>
+                    <p data-ar="دورات تدريبية مجانية وشروحات مفصلة لتطوير مهاراتك" data-en="Free training courses and detailed tutorials to develop your skills">
+                        دورات تدريبية مجانية وشروحات مفصلة لتطوير مهاراتك
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leaderboard Section -->
+    <section id="leaderboard" class="leaderboard">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-ar="أفضل المسوقين هذا الشهر" data-en="Top Marketers This Month">أفضل المسوقين هذا الشهر</h2>
+                <p data-ar="تعرف على أفضل المسوقين الذين حققوا أعلى المبيعات والعمولات" data-en="Meet the top marketers who achieved the highest sales and commissions">
+                    تعرف على أفضل المسوقين الذين حققوا أعلى المبيعات والعمولات
+                </p>
+            </div>
+
+            <div class="leaderboard-container">
+                <div class="leaderboard-table">
+                    <div class="table-header">
+                        <div class="rank" data-ar="الترتيب" data-en="Rank">الترتيب</div>
+                        <div class="marketer" data-ar="المسوق" data-en="Marketer">المسوق</div>
+                        <div class="sales" data-ar="المبيعات" data-en="Sales">المبيعات</div>
+                        <div class="commission" data-ar="العمولة" data-en="Commission">العمولة</div>
+                        <div class="conversion" data-ar="معدل التحويل" data-en="Conversion Rate">معدل التحويل</div>
+                    </div>
+
+                    <div class="table-body" id="leaderboard-data">
+                        <!-- Data will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <div class="leaderboard-stats">
+                    <div class="stat-box">
+                        <h3 id="total-marketers">12,547</h3>
+                        <p data-ar="إجمالي المسوقين" data-en="Total Marketers">إجمالي المسوقين</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3 id="monthly-sales">$847,293</h3>
+                        <p data-ar="مبيعات الشهر" data-en="Monthly Sales">مبيعات الشهر</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3 id="avg-commission">$2,341</h3>
+                        <p data-ar="متوسط العمولة" data-en="Average Commission">متوسط العمولة</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notifications Section -->
+    <section id="notifications" class="notifications-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-ar="نظام الإشعارات المتقدم" data-en="Advanced Notification System">نظام الإشعارات المتقدم</h2>
+                <p data-ar="إنشاء وإدارة جميع أنواع الإشعارات مع إمكانية التخصيص الكامل" data-en="Create and manage all types of notifications with full customization">
+                    إنشاء وإدارة جميع أنواع الإشعارات مع إمكانية التخصيص الكامل
+                </p>
+            </div>
+
+            <div class="notifications-container">
+                <!-- Notification Creator -->
+                <div class="notification-creator">
+                    <div class="creator-header">
+                        <h3 data-ar="إنشاء إشعار جديد" data-en="Create New Notification">إنشاء إشعار جديد</h3>
+                        <p data-ar="قم بإنشاء إشعار مخصص بالنوع والمحتوى الذي تريده" data-en="Create a custom notification with the type and content you want">
+                            قم بإنشاء إشعار مخصص بالنوع والمحتوى الذي تريده
+                        </p>
+                    </div>
+
+                    <form id="notification-form" class="notification-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="notification-title" name="title" required>
+                                <label for="notification-title" data-ar="عنوان الإشعار" data-en="Notification Title">عنوان الإشعار</label>
+                            </div>
+                            <div class="form-group">
+                                <select id="notification-type" name="type" required>
+                                    <option value="" data-ar="اختر نوع الإشعار" data-en="Select Notification Type">اختر نوع الإشعار</option>
+                                    <option value="success" data-ar="نجاح" data-en="Success">نجاح</option>
+                                    <option value="error" data-ar="خطأ" data-en="Error">خطأ</option>
+                                    <option value="warning" data-ar="تحذير" data-en="Warning">تحذير</option>
+                                    <option value="info" data-ar="معلومات" data-en="Info">معلومات</option>
+                                </select>
+                                <label for="notification-type" data-ar="نوع الإشعار" data-en="Notification Type">نوع الإشعار</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea id="notification-message" name="message" rows="3" required></textarea>
+                            <label for="notification-message" data-ar="محتوى الإشعار" data-en="Notification Message">محتوى الإشعار</label>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="notification-icon" name="icon" placeholder="bell">
+                                <label for="notification-icon" data-ar="أيقونة الإشعار (اختياري)" data-en="Notification Icon (Optional)">أيقونة الإشعار (اختياري)</label>
+                                <small data-ar="مثال: bell, check-circle, exclamation-triangle" data-en="Example: bell, check-circle, exclamation-triangle">
+                                    مثال: bell, check-circle, exclamation-triangle
+                                </small>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="notification-custom-name" name="customName" placeholder="">
+                                <label for="notification-custom-name" data-ar="اسم مخصص للإشعار" data-en="Custom Notification Name">اسم مخصص للإشعار</label>
+                                <small data-ar="اسم يدخله المستخدم يدوياً" data-en="Name entered manually by user">
+                                    اسم يدخله المستخدم يدوياً
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-plus"></i>
+                                <span data-ar="إنشاء الإشعار" data-en="Create Notification">إنشاء الإشعار</span>
+                            </button>
+                            <button type="button" class="btn btn-secondary" onclick="previewNotification()">
+                                <i class="fas fa-eye"></i>
+                                <span data-ar="معاينة" data-en="Preview">معاينة</span>
+                            </button>
+                            <button type="reset" class="btn btn-outline">
+                                <i class="fas fa-undo"></i>
+                                <span data-ar="إعادة تعيين" data-en="Reset">إعادة تعيين</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Quick Notification Buttons -->
+                <div class="quick-notifications">
+                    <h4 data-ar="إشعارات سريعة" data-en="Quick Notifications">إشعارات سريعة</h4>
+                    <div class="quick-buttons">
+                        <button class="quick-btn success" onclick="createQuickNotification('success')">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-ar="نجاح" data-en="Success">نجاح</span>
+                        </button>
+                        <button class="quick-btn error" onclick="createQuickNotification('error')">
+                            <i class="fas fa-times-circle"></i>
+                            <span data-ar="خطأ" data-en="Error">خطأ</span>
+                        </button>
+                        <button class="quick-btn warning" onclick="createQuickNotification('warning')">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span data-ar="تحذير" data-en="Warning">تحذير</span>
+                        </button>
+                        <button class="quick-btn info" onclick="createQuickNotification('info')">
+                            <i class="fas fa-info-circle"></i>
+                            <span data-ar="معلومات" data-en="Info">معلومات</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Notifications List -->
+                <div class="notifications-list">
+                    <div class="list-header">
+                        <h4 data-ar="قائمة الإشعارات" data-en="Notifications List">قائمة الإشعارات</h4>
+                        <div class="list-actions">
+                            <button class="btn btn-sm btn-outline" onclick="clearAllNotifications()">
+                                <i class="fas fa-trash"></i>
+                                <span data-ar="مسح الكل" data-en="Clear All">مسح الكل</span>
+                            </button>
+                            <button class="btn btn-sm btn-primary" onclick="exportNotifications()">
+                                <i class="fas fa-download"></i>
+                                <span data-ar="تصدير" data-en="Export">تصدير</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="notifications-grid" id="notifications-grid">
+                        <!-- Notifications will be populated here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tutorials Section -->
+    <section id="tutorials" class="tutorials">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-ar="شروحات تعليمية" data-en="Educational Tutorials">شروحات تعليمية</h2>
+                <p data-ar="تعلم كيفية البدء والنجاح في التسويق بالعمولة من خلال شروحاتنا المفصلة" data-en="Learn how to start and succeed in affiliate marketing through our detailed tutorials">
+                    تعلم كيفية البدء والنجاح في التسويق بالعمولة من خلال شروحاتنا المفصلة
+                </p>
+            </div>
+
+            <div class="tutorials-container">
+                <div class="playlist-header">
+                    <h3 data-ar="قائمة تشغيل شاملة" data-en="Comprehensive Playlist">قائمة تشغيل شاملة</h3>
+                    <p data-ar="سلسلة فيديوهات تعليمية متكاملة" data-en="Complete educational video series">سلسلة فيديوهات تعليمية متكاملة</p>
+                </div>
+
+                <div class="video-playlist" id="video-playlist">
+                    <!-- Videos will be populated by JavaScript -->
+                </div>
+
+                <div class="video-player-container">
+                    <div class="video-player" id="main-video-player">
+                        <iframe id="youtube-player" width="100%" height="400" 
+                                src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                                frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h4 id="current-video-title">مقدمة في التسويق بالعمولة</h4>
+                        <p id="current-video-description">تعرف على أساسيات التسويق بالعمولة وكيفية البدء</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</h2>
+                <p data-ar="نحن هنا لمساعدتك في رحلتك نحو النجاح" data-en="We're here to help you on your journey to success">
+                    نحن هنا لمساعدتك في رحلتك نحو النجاح
+                </p>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4 data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</h4>
+                            <p>support@affiliatehub.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4 data-ar="الهاتف" data-en="Phone">الهاتف</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4 data-ar="ساعات العمل" data-en="Working Hours">ساعات العمل</h4>
+                            <p data-ar="24/7 دعم متواصل" data-en="24/7 Continuous Support">24/7 دعم متواصل</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <h4 data-ar="تابعنا على" data-en="Follow Us">تابعنا على</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="social-icon telegram"><i class="fab fa-telegram-plane"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name" data-ar="الاسم الكامل" data-en="Full Name">الاسم الكامل</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email" data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject" data-ar="الموضوع" data-en="Subject">الموضوع</label>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message" data-ar="الرسالة" data-en="Message">الرسالة</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" data-ar="إرسال الرسالة" data-en="Send Message">إرسال الرسالة</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-chart-line"></i> AffiliateHub</h3>
+                    <p data-ar="منصتك الموثوقة للنجاح في التسويق بالعمولة" data-en="Your trusted platform for affiliate marketing success">
+                        منصتك الموثوقة للنجاح في التسويق بالعمولة
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h4 data-ar="روابط سريعة" data-en="Quick Links">روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+                        <li><a href="#features" data-ar="المميزات" data-en="Features">المميزات</a></li>
+                        <li><a href="#leaderboard" data-ar="أفضل المسوقين" data-en="Top Marketers">أفضل المسوقين</a></li>
+                        <li><a href="#notifications" data-ar="الإشعارات" data-en="Notifications">الإشعارات</a></li>
+                        <li><a href="#tutorials" data-ar="الشروحات" data-en="Tutorials">الشروحات</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 data-ar="الدعم" data-en="Support">الدعم</h4>
+                    <ul>
+                        <li><a href="#" data-ar="مركز المساعدة" data-en="Help Center">مركز المساعدة</a></li>
+                        <li><a href="#" data-ar="الأسئلة الشائعة" data-en="FAQ">الأسئلة الشائعة</a></li>
+                        <li><a href="#contact" data-ar="اتصل بنا" data-en="Contact Us">اتصل بنا</a></li>
+                        <li><a href="#" data-ar="سياسة الخصوصية" data-en="Privacy Policy">سياسة الخصوصية</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 data-ar="النشرة الإخبارية" data-en="Newsletter">النشرة الإخبارية</h4>
+                    <p data-ar="اشترك للحصول على آخر الأخبار والعروض" data-en="Subscribe to get the latest news and offers">
+                        اشترك للحصول على آخر الأخبار والعروض
+                    </p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="البريد الإلكتروني">
+                        <button type="submit" data-ar="اشتراك" data-en="Subscribe">اشتراك</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 AffiliateHub. <span data-ar="جميع الحقوق محفوظة" data-en="All rights reserved">جميع الحقوق محفوظة</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 data-ar="تسجيل الدخول" data-en="Login">تسجيل الدخول</h3>
+                <span class="close" onclick="closeModal('login-modal')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="login-form">
+                    <div class="form-group">
+                        <input type="text" id="login-username" name="username" required>
+                        <label for="login-username" data-ar="اسم المستخدم" data-en="Username">اسم المستخدم</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="login-password" name="password" required>
+                        <label for="login-password" data-ar="كلمة المرور" data-en="Password">كلمة المرور</label>
+                    </div>
+                    <div class="form-options">
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="remember-me">
+                            <span class="checkmark"></span>
+                            <span data-ar="تذكرني" data-en="Remember me">تذكرني</span>
+                        </label>
+                        <a href="#" class="forgot-password" data-ar="نسيت كلمة المرور؟" data-en="Forgot password?">نسيت كلمة المرور؟</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width" data-ar="دخول" data-en="Login">دخول</button>
+                </form>
+                <div class="modal-footer">
+                    <p data-ar="ليس لديك حساب؟" data-en="Don't have an account?">ليس لديك حساب؟ 
+                        <a href="#" onclick="switchModal('login-modal', 'register-modal')" data-ar="سجل الآن" data-en="Register now">سجل الآن</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="register-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 data-ar="إنشاء حساب جديد" data-en="Create New Account">إنشاء حساب جديد</h3>
+                <span class="close" onclick="closeModal('register-modal')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="register-form">
+                    <div class="form-group">
+                        <input type="text" id="register-fullname" name="fullname" required>
+                        <label for="register-fullname" data-ar="الاسم الكامل" data-en="Full Name">الاسم الكامل</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="register-email" name="email" required>
+                        <label for="register-email" data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="register-username" name="username" required>
+                        <label for="register-username" data-ar="اسم المستخدم" data-en="Username">اسم المستخدم</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="register-password" name="password" required>
+                        <label for="register-password" data-ar="كلمة المرور" data-en="Password">كلمة المرور</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                        <label for="confirm-password" data-ar="تأكيد كلمة المرور" data-en="Confirm Password">تأكيد كلمة المرور</label>
+                    </div>
+                    <div class="form-options">
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="agree-terms" required>
+                            <span class="checkmark"></span>
+                            <span data-ar="أوافق على الشروط والأحكام" data-en="I agree to terms and conditions">أوافق على الشروط والأحكام</span>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width" data-ar="إنشاء حساب" data-en="Create Account">إنشاء حساب</button>
+                </form>
+                <div class="modal-footer">
+                    <p data-ar="لديك حساب بالفعل؟" data-en="Already have an account?">لديك حساب بالفعل؟ 
+                        <a href="#" onclick="switchModal('register-modal', 'login-modal')" data-ar="سجل دخولك" data-en="Login here">سجل دخولك</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Live Chat Widget -->
+    <div id="chat-widget" class="chat-widget">
+        <div class="chat-welcome-bubble" id="chat-welcome-bubble">
+            <p class="chat-welcome-text" data-ar="أهلاً بك! كيف يمكنني مساعدتك؟" data-en="Hello! How can I help you?">
+                أهلاً بك! كيف يمكنني مساعدتك؟
+            </p>
+        </div>
+        <div class="chat-toggle" onclick="toggleChat()">
+            <i class="fas fa-comments"></i>
+            <span class="chat-notification" id="chat-notification">1</span>
+        </div>
+        
+        <div class="chat-window" id="chat-window">
+            <div class="chat-header">
+                <h4 data-ar="الدعم المباشر" data-en="Live Support">الدعم المباشر</h4>
+                <button class="chat-close" onclick="toggleChat()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="chat-messages" id="chat-messages">
+                <div class="message bot-message">
+                    <div class="message-content" data-ar="مرحباً! كيف يمكنني مساعدتك اليوم؟" data-en="Hello! How can I help you today?">
+                        مرحباً! كيف يمكنني مساعدتك اليوم؟
+                    </div>
+                    <div class="message-time">الآن</div>
+                </div>
+            </div>
+            
+            <div class="chat-input">
+                <input type="text" id="chat-input-field" placeholder="اكتب رسالتك هنا...">
+                <button onclick="sendMessage()">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/chat.js"></script>
+    <script src="js/leaderboard.js"></script>
+    <script src="js/tutorials.js"></script>
+    <script src="js/notifications.js"></script>
+
+</body>
+</html>
